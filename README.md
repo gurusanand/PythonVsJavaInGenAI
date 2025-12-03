@@ -25,16 +25,21 @@ java GenAIChatbot
 
 ```
 PythonVsJavaInGenAI/
-├── python-example/          # Python implementation
-│   ├── genai_chatbot.py    # Main chatbot implementation
-│   ├── requirements.txt     # Python dependencies
-│   └── README.md           # Python-specific documentation
-├── java-example/           # Java implementation
-│   ├── GenAIChatbot.java  # Main chatbot implementation
-│   └── README.md          # Java-specific documentation
-├── docs/                   # Documentation
-│   └── COMPARISON.md      # Detailed comparison analysis
-└── README.md              # This file
+├── python-example/             # Python implementation
+│   ├── genai_chatbot.py       # Main chatbot implementation
+│   ├── test_genai_chatbot.py  # Unit tests
+│   ├── requirements.txt        # Python dependencies
+│   └── README.md              # Python-specific documentation
+├── java-example/              # Java implementation
+│   ├── GenAIChatbot.java     # Main chatbot implementation
+│   ├── GenAIChatbotTest.java # Unit tests
+│   └── README.md             # Java-specific documentation
+├── docs/                      # Documentation
+│   ├── COMPARISON.md         # Detailed comparison analysis
+│   ├── BENCHMARKS.md         # Performance metrics
+│   ├── GETTING_STARTED.md    # Setup and usage guide
+│   └── QUICK_REFERENCE.md    # Command cheat sheet
+└── README.md                 # This file
 ```
 
 ## 🎯 Features

@@ -41,7 +41,7 @@ public class GenAIChatbotTest {
     
     private static void testInitialization() {
         GenAIChatbot bot = new GenAIChatbot();
-        assertTrue("Model name should be gpt-3.5-turbo", 
+        assertTrue("History should be empty on initialization", 
                    bot.getHistory().size() == 0);
         System.out.println("✓ testInitialization");
     }
