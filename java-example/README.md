@@ -39,10 +39,30 @@ mvn exec:java -Dexec.mainClass="SentimentAnalyzer"
 mvn exec:java -Dexec.mainClass="SentimentAnalyzer" -Dexec.args="Your custom text here"
 ```
 
+### Run tests:
+```bash
+mvn test
+```
+
 ### Alternative: Direct Java execution
 ```bash
 mvn package
 java -cp target/sentiment-analyzer-1.0-SNAPSHOT.jar:~/.m2/repository/edu/stanford/nlp/stanford-corenlp/4.5.4/* SentimentAnalyzer
+```
+
+## Project Structure
+
+```
+java-example/
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── SentimentAnalyzer.java
+│   └── test/
+│       └── java/
+│           └── SentimentAnalyzerTest.java
+├── pom.xml
+└── README.md
 ```
 
 ## Example Output

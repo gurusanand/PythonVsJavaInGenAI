@@ -34,6 +34,11 @@ python sentiment_analyzer.py
 python sentiment_analyzer.py "Your custom text here"
 ```
 
+### Run tests:
+```bash
+python -m unittest test_sentiment_analyzer -v
+```
+
 ## Example Output
 
 ```
