@@ -74,13 +74,13 @@ Both implementations support these commands:
 ```
 Python Implementation
 ├── genai_chatbot.py       (141 lines)
-├── test_genai_chatbot.py  (95 lines)
+├── test_genai_chatbot.py  (83 lines)
 ├── requirements.txt       (3 lines)
 └── README.md
 
 Java Implementation
 ├── GenAIChatbot.java      (173 lines)
-├── GenAIChatbotTest.java  (133 lines)
+├── GenAIChatbotTest.java  (144 lines)
 └── README.md
 ```
 
