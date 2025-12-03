@@ -107,6 +107,9 @@ This project is open source and available for educational purposes.
 
 ## 🌟 Additional Resources
 
+- [Project Summary](docs/SUMMARY.md) - Complete overview of the project
 - [Python Example Documentation](python-example/README.md)
 - [Java Example Documentation](java-example/README.md)
 - [Detailed Comparison](docs/COMPARISON.md)
+- [Quick Start Guide](docs/QUICK_START.md)
+- [Architecture Documentation](docs/ARCHITECTURE.md)
