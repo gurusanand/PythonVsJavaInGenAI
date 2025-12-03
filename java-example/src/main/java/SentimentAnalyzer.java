@@ -14,6 +14,10 @@ public class SentimentAnalyzer {
     
     /**
      * Initialize the sentiment analyzer with Stanford CoreNLP pipeline.
+     * 
+     * Note: Pipeline initialization is expensive (~10-30 seconds). For production use,
+     * consider implementing a singleton pattern or lazy initialization to avoid
+     * repeated initialization overhead when multiple analyzer instances are needed.
      */
     public SentimentAnalyzer() {
         Properties props = new Properties();
@@ -29,6 +33,11 @@ public class SentimentAnalyzer {
      * @return SentimentResult object containing sentiment information
      */
     public SentimentResult analyze(String text) {
+        // Handle empty or whitespace-only text
+        if (text == null || text.trim().isEmpty()) {
+            return new SentimentResult(0.0, "Neutral");
+        }
+        
         Annotation annotation = pipeline.process(text);
         
         int totalSentiment = 0;
@@ -41,6 +50,7 @@ public class SentimentAnalyzer {
             sentenceCount++;
         }
         
+        // Calculate average sentiment, defaulting to 0 (Neutral) if no sentences found
         double avgSentiment = sentenceCount > 0 ? (double) totalSentiment / sentenceCount : 0;
         String overallSentiment = mapSentimentValue(avgSentiment);
         
